@@ -1,0 +1,229 @@
+
+<style>
+    .home-content{
+        background-color: #00636e;
+        background-size: 20em;
+        background-image: url('images/assets/bg_icon.png');
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        background-position:center;
+        height: 420px;
+    }
+
+    .top-bar{
+        background-size: 100%;
+        background-image: url('images/assets/top_bar.png');
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        height: 35px;
+    }
+
+    .top-bar-title img{
+        width: 100%;
+    }
+
+    .top-bar-title{
+        /*text-align: center;*/
+        margin: 4px 0;
+    }
+
+    .top-bar-content{
+        position: absolute;
+        color: #d6985d;
+    }
+
+    .top-bar-content-room{
+        left: 21%
+    }
+
+    .top-bar-content-num{
+        left: 43%
+    }
+
+    .top-bar-content-time{
+        left: 60%
+    }
+
+    .top-bar-content-borad{
+        left: 76%;
+        width: 1.5em;
+    }
+
+    .top-bar-content-menu{
+        left: 2%;
+        top: 3%;
+        width: 1.8em;
+    }
+
+    .content{
+    }
+
+    .seat-empty{
+        position: absolute;
+    }
+
+    .seat-empty.top{
+        left: 47%;
+        top: 10%;
+    }
+
+    .seat-empty.right-one{
+        right: 5%;
+        top: 27%;
+    }
+    .seat-empty.right-two{
+        right: 5%;
+        top: 55%;
+    }
+
+    .seat-empty.left-one{
+        left: 5%;
+        top: 28%;
+    }
+    .seat-empty.left-two{
+        left: 5%;
+        top: 56%;
+    }
+
+    .seat-empty img{
+        width: 3em;
+    }
+
+    .seat{
+        top: 75%;
+        left: 41%;
+        position: absolute;
+        text-align: center;
+    }
+
+    .seat .init-title{
+        margin-bottom: 5px;
+        color: #d6985d;
+    }
+
+    .seat img{
+        width: 3em;
+    }    
+    
+    .modal{
+        position: absolute;
+        top: 30%;
+        width: 200px;
+        left: 36%;
+        z-index: 2;
+    }
+
+    .modal .modal-content{
+        background: #00636e;
+        border: 2px solid #00a0ab;
+        padding: 15px;
+    }
+
+    .modal .modal-title{
+        background: #00636e;
+    }
+
+    .modal .modal-body{
+        color: #d6985d;
+    }
+
+    .modal .modal-footer{
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .modal .modal-footer span{
+        
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 0.8em;
+        margin: 0 10px;
+    }
+
+    .confirm{
+        background: #e97c48;
+    }
+
+    .cancel{
+        background: #03cc50;
+    }
+
+    .start-game{
+        position: absolute;
+        top: 40%;
+        left: 38%;
+    }
+
+    .start-game img{
+        width: 11em;
+    }
+
+</style>
+
+
+<div class="home-content">
+    <div class="top-bar">
+        <div class="top-bar-title">
+            <div class="top-bar-content top-bar-content-menu">
+                <img src="images/assets/top_btn_menu.png"/>
+            </div>
+            <!--<div class="top-bar-content top-bar-content-menu-detail">
+                <img src="images/assets/settingPop.png">
+            </div>-->
+            <div class="top-bar-content top-bar-content-room">房间号：123456</div>
+            <div class="top-bar-content top-bar-content-num">底分：1</div>
+            <div class="top-bar-content top-bar-content-time">00:03:00</div>
+            <div class="top-bar-content top-bar-content-borad">
+                <img src="images/assets/top_btn_borad.png"/>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="seat-empty top">
+                <img src="images/assets/seat_empty.png"/>
+            </div>
+            <div class="seat-empty right-one">
+                <img src="images/assets/seat_empty.png"/>
+            </div>
+            <div class="seat-empty right-two">
+                <img src="images/assets/seat_empty.png"/>
+            </div>
+            <div class="seat-empty left-one">
+                <img src="images/assets/seat_empty.png"/>
+            </div>
+            <div class="seat-empty left-two">
+                <img src="images/assets/seat_empty.png"/>
+            </div>
+            <div class="seat">
+                <div class="init-title">还有座位 快坐下吧</div>
+                <img src="images/assets/seat.png" ng-click="showModal()"/>
+            </div>
+
+            <!--modal-->
+            <div class="modal" id="alert-modal" ng-show="showAlertModal">
+                <div class="modal-content">
+                    <div class="modal-title">
+                        
+                    </div>
+                    <div class="modal-body">
+                        下局开始后将扣除40房豆（只有一次），确定要坐下吗？
+                    </div>
+                    <div class="modal-footer">
+                        <span class="cancel" ng-click="hideModal()">取消</span>
+                        <span class="confirm" ng-click="alertModalConfirm()">确定</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="start-game" ng-click="startGame()" ng-hide="startGameNum === 0">
+                <img src="images/assets/startBTN.png" ng-show="showStartGame"/>
+                <img src="images/numbers/y3.png" ng-show="startGameNum === 3"/>
+                <img src="images/numbers/y2.png" ng-show="startGameNum === 2"/>
+                <img src="images/numbers/y1.png" ng-show="startGameNum === 1"/>
+                <img src="images/numbers/y0.png" ng-show="startGameNum === 0"/>
+            </div>
+        </div>
+    </div>
+</div>    
+

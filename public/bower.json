@@ -1,0 +1,32 @@
+{
+  "name": "ilcss",
+  "dependencies": {
+    "angular": "1.5.8",
+    "angular-route": "1.5.8",
+    "angular-mocks": "1.5.8",
+    "requirejs": "^2.3.3",
+    "moment": "^2.18.1"
+  },
+  "resolutions": {
+    "angular": "1.5.8"
+  },
+  "authors": [
+    ""
+  ],
+  "description": "",
+  "main": "",
+  "keywords": [
+    "ilcss"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower",
+    "test",
+    "tests"
+  ]
+}
