@@ -64,24 +64,24 @@
 
     .seat-empty.top{
         left: 47%;
-        top: 10%;
+        top: 9%;
     }
 
     .seat-empty.right-one{
-        right: 5%;
+        right: 2%;
         top: 27%;
     }
     .seat-empty.right-two{
-        right: 5%;
+        right: 2%;
         top: 55%;
     }
 
     .seat-empty.left-one{
-        left: 5%;
+        left: 2%;
         top: 28%;
     }
     .seat-empty.left-two{
-        left: 5%;
+        left: 2%;
         top: 56%;
     }
 
@@ -89,7 +89,13 @@
         width: 3em;
     }
 
-    .seat{
+    .seat.seat-active{
+        top: 78%;
+        left: 5%;
+        position: absolute;
+    }
+
+    .seat.seat-inactive{
         top: 75%;
         left: 41%;
         position: absolute;
@@ -110,7 +116,7 @@
         top: 30%;
         width: 200px;
         left: 36%;
-        z-index: 2;
+        z-index: 10;
     }
 
     .modal .modal-content{
@@ -159,6 +165,334 @@
         width: 11em;
     }
 
+    .qiang-zhuang{
+        top: 65%;
+        left: 32%;
+        position: absolute;
+        text-align: center;
+    }
+
+    .qiang-zhuang-five{
+        top: 65%;
+        left: 25%;
+        position: absolute;
+        text-align: center;
+    }
+
+    .kaipai{
+        top: 65%;
+        left: 45%;
+        position: absolute;
+        text-align: center;
+    }
+
+    .qiang-zhuang img{
+        width: 4em;
+    } 
+
+    .qiang-zhuang-five img{
+        width: 4em;
+    } 
+
+    .kaipai img{
+        width: 4em;
+    }
+
+    .qiang-zhuang-content{
+        /*padding: 15px 10px;
+        border-radius: 5px;*/
+        color: #d6985d;
+        /*font-size: 0.8em;*/
+    }
+
+    .qiang-zhuang-btn-q{
+        /*background: #03cc50;
+        padding: 5px 20px;
+        border-radius: 5px;*/
+        position: absolute;
+        top: 5%;
+        left: 28%;
+    }
+
+    .qiang-zhuang-btn-b{
+        /*background: #e97c48;
+        padding: 5px 20px;
+        border-radius: 5px;*/
+        position: absolute;
+        top: 5%;
+        left: 60%;
+    }
+
+    .seat-empty .zhuang-icon{
+        width: 1.5em;
+        bottom: 65%;
+        right: 65%;
+        position: absolute;
+    }
+
+    .centerInterval{
+        position:absolute;
+        top: 40%;
+        left: 47%;
+    }
+
+    .centerInterval img{
+        width: 3em;
+    }
+
+    .centerIntervalNum{
+        color: #d6985d;
+        position: absolute;
+        top: 20%;
+        left: 35%;
+    }
+
+    .xia-zhu-content{
+        /*padding: 15px 10px;
+        border-radius: 5px;*/
+        color: #d6985d;
+        /*font-size: 0.8em;*/
+    }
+
+    .qiang-zhuang-content.bg-btn{
+        width: 5em;
+    }
+
+    .xia-zhu-content.bg-btn{
+        width: 5em;
+    }
+
+    .xia-zhu-btn-1{
+        position: absolute;
+        top: 4%;
+        left: 14%;
+    }
+
+    .xia-zhu-btn-2{
+        position: absolute;
+        top: 4%;
+        left: 45%;
+    }
+
+    .xia-zhu-btn-3{
+        position: absolute;
+        top: 4%;
+        left: 77%;
+    }
+
+    .seat-empty-top img{
+        position:absolute;
+    }
+
+    .bg-puke-1{
+        left: -30%;
+        z-index: 1;
+    }
+
+    .bg-puke-2{
+        left: 0;
+        z-index: 2;
+    }
+
+    .bg-puke-3{
+        left: 30%;
+        z-index: 3;
+    }
+
+    .bg-puke-4{
+        left: 60%;
+        z-index: 4;
+    }
+
+    .bg-puke-5{
+        left: 90%;
+        z-index: 5;
+    }
+
+    .seat-empty-right{
+        /*position:absolute;*/
+        top: 0;
+    }
+
+    .seat-empty-right img{
+        position: absolute;
+    }
+
+    .seat-empty-right.bg-puke-1{
+        left: -230%;
+        z-index: 1;
+    }
+
+    .seat-empty-right.bg-puke-2{
+        left: -200%;
+        z-index: 2;
+    }
+
+    .seat-empty-right.bg-puke-3{
+        left: -170%;
+        z-index: 3;
+    }
+
+    .seat-empty-right.bg-puke-4{
+        left: -140%;
+        z-index: 4;
+    }
+
+    .seat-empty-right.bg-puke-5{
+        left: -110%;
+        z-index: 5;
+    }
+
+    .seat-empty-left{
+        /*position:absolute;*/
+        top: 0;
+    }
+
+    .seat-empty-left img{
+        position: absolute;
+    }
+
+    .seat-empty-left.bg-puke-1{
+        left: 230%;
+        z-index: 5;
+    }
+
+    .seat-empty-left.bg-puke-2{
+        left: 200%;
+        z-index: 4;
+    }
+
+    .seat-empty-left.bg-puke-3{
+        left: 170%;
+        z-index: 3;
+    }
+
+    .seat-empty-left.bg-puke-4{
+        left: 140%;
+        z-index: 2;
+    }
+
+    .seat-empty-left.bg-puke-5{
+        left: 110%;
+        z-index: 1;
+    }
+
+    .mic-icon{
+        position: absolute;
+        bottom: 10%;
+        right: 3%;
+    }
+
+    .mic-icon img{
+        width: 2em;
+    }
+
+    .emoji-icon{
+        position: absolute;
+        bottom: 0;
+        right: 3%;
+    }
+
+    .emoji-icon img{
+        width: 2em;
+    }
+
+    .zhao-niu-content{
+        color: #00ffff;
+        /*padding: 10px 15px;*/
+    }
+
+    .zhao-niu-content span{
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .zhao-niu-content img{
+        width: 2em;
+    }
+
+    .zhao-niu-content .zhao-niu-content-num-1{
+        position: absolute;
+        top: 5%;
+        left: 26%;
+    }
+
+    .zhao-niu-content .zhao-niu-content-num-2{
+        position: absolute;
+        top: 5%;
+        left: 41%;
+    }
+
+    .zhao-niu-content .zhao-niu-content-num-3{
+        position: absolute;
+        top: 5%;
+        left: 57%;
+    }
+
+    .zhao-niu-content .zhao-niu-content-num-4{
+        position: absolute;
+        top: 5%;
+        left: 72%;
+    }
+
+    .have-niu{
+        position: absolute;
+        top: 36%;
+        left: 103%;
+        color: #d6985d;
+    }
+
+    .have-niu img{
+        width: 5em;
+    }
+
+    .you-niu{
+        position: absolute;
+        top: 6%;
+        left: 28%;
+    }
+
+    .mei-niu{
+        position: absolute;
+        top: 57%;
+        left: 28%;
+    }
+
+    .kaipai-content{
+        color: #00ffff;
+        padding: 10px 15px;
+    }
+
+    .kaipai-img-1{
+        position: absolute;
+        z-index: 1;
+        left: 0;
+    }
+
+    .kaipai-img-2{
+        position: absolute;
+        z-index: 2;
+        left: 30%;
+    }
+
+    .kaipai-img-3{
+        position: absolute;
+        z-index: 3;
+        left: 60%;
+    }
+
+    .kaipai-img-4{
+        position: absolute;
+        z-index: 4;
+        left: 90%;
+    }
+
+    .kaipai-img-5{
+        position: absolute;
+        z-index: 5;
+        left: 120%;
+    }
+
 </style>
 
 
@@ -182,36 +516,163 @@
         <div class="content">
             <div class="seat-empty top">
                 <img src="images/assets/seat_empty.png"/>
+                <div class="seat-empty-top" ng-show="showPukeBackGround">
+                    <img src="images/puke/background.png" class="bg-puke-1"/>
+                    <img src="images/puke/background.png" class="bg-puke-2"/>
+                    <img src="images/puke/background.png" class="bg-puke-3"/>
+                    <img src="images/puke/background.png" class="bg-puke-4"/>
+                    <img src="images/puke/background.png" class="bg-puke-5"/>
+                </div>
+                <div class="seat-empty-top" ng-show="kaiPai">
+                    <img src="images/puke/11.png" class="bg-puke-1"/>
+                    <img src="images/puke/11.png" class="bg-puke-2"/>
+                    <img src="images/puke/11.png" class="bg-puke-3"/>
+                    <img src="images/puke/11.png" class="bg-puke-4"/>
+                    <img src="images/puke/11.png" class="bg-puke-5"/>
+                </div>
             </div>
             <div class="seat-empty right-one">
                 <img src="images/assets/seat_empty.png"/>
+                <div class="seat-empty-right" ng-show="showPukeBackGround">
+                    <img src="images/puke/background.png" class="seat-empty-right bg-puke-1"/>
+                    <img src="images/puke/background.png" class="seat-empty-right bg-puke-2"/>
+                    <img src="images/puke/background.png" class="seat-empty-right bg-puke-3"/>
+                    <img src="images/puke/background.png" class="seat-empty-right bg-puke-4"/>
+                    <img src="images/puke/background.png" class="seat-empty-right bg-puke-5"/>
+                </div>
+                <div class="seat-empty-right" ng-show="kaiPai">
+                    <img src="images/puke/11.png" class="seat-empty-right bg-puke-1"/>
+                    <img src="images/puke/11.png" class="seat-empty-right bg-puke-2"/>
+                    <img src="images/puke/11.png" class="seat-empty-right bg-puke-3"/>
+                    <img src="images/puke/11.png" class="seat-empty-right bg-puke-4"/>
+                    <img src="images/puke/11.png" class="seat-empty-right bg-puke-5"/>
+                </div>
             </div>
             <div class="seat-empty right-two">
                 <img src="images/assets/seat_empty.png"/>
+                <div class="seat-empty-right" ng-show="showPukeBackGround">
+                    <img src="images/puke/background.png" class="seat-empty-right bg-puke-1"/>
+                    <img src="images/puke/background.png" class="seat-empty-right bg-puke-2"/>
+                    <img src="images/puke/background.png" class="seat-empty-right bg-puke-3"/>
+                    <img src="images/puke/background.png" class="seat-empty-right bg-puke-4"/>
+                    <img src="images/puke/background.png" class="seat-empty-right bg-puke-5"/>
+                </div>
+                <div class="seat-empty-right" ng-show="kaiPai">
+                    <img src="images/puke/11.png" class="seat-empty-right bg-puke-1"/>
+                    <img src="images/puke/11.png" class="seat-empty-right bg-puke-2"/>
+                    <img src="images/puke/11.png" class="seat-empty-right bg-puke-3"/>
+                    <img src="images/puke/11.png" class="seat-empty-right bg-puke-4"/>
+                    <img src="images/puke/11.png" class="seat-empty-right bg-puke-5"/>
+                </div>
             </div>
             <div class="seat-empty left-one">
                 <img src="images/assets/seat_empty.png"/>
+                <div class="seat-empty-left" ng-show="showPukeBackGround">
+                    <img src="images/puke/background.png" class="seat-empty-left bg-puke-1"/>
+                    <img src="images/puke/background.png" class="seat-empty-left bg-puke-2"/>
+                    <img src="images/puke/background.png" class="seat-empty-left bg-puke-3"/>
+                    <img src="images/puke/background.png" class="seat-empty-left bg-puke-4"/>
+                    <img src="images/puke/background.png" class="seat-empty-left bg-puke-5"/>
+                </div>
+                <div class="seat-empty-left" ng-show="kaiPai">
+                    <img src="images/puke/11.png" class="seat-empty-left bg-puke-1"/>
+                    <img src="images/puke/11.png" class="seat-empty-left bg-puke-2"/>
+                    <img src="images/puke/11.png" class="seat-empty-left bg-puke-3"/>
+                    <img src="images/puke/11.png" class="seat-empty-left bg-puke-4"/>
+                    <img src="images/puke/11.png" class="seat-empty-left bg-puke-5"/>
+                </div>
             </div>
             <div class="seat-empty left-two">
+                <img src="images/assets/zhuang.png" class="zhuang-icon" ng-show="isZhuang"/>
                 <img src="images/assets/seat_empty.png"/>
-            </div>
-            <div class="seat">
-                <div class="init-title">还有座位 快坐下吧</div>
-                <img src="images/assets/seat.png" ng-click="showModal()"/>
+                <div class="seat-empty-left" ng-show="showPukeBackGround">
+                    <img src="images/puke/background.png" class="seat-empty-left bg-puke-1"/>
+                    <img src="images/puke/background.png" class="seat-empty-left bg-puke-2"/>
+                    <img src="images/puke/background.png" class="seat-empty-left bg-puke-3"/>
+                    <img src="images/puke/background.png" class="seat-empty-left bg-puke-4"/>
+                    <img src="images/puke/background.png" class="seat-empty-left bg-puke-5"/>
+                </div>
+                <div class="seat-empty-left" ng-show="kaiPai">
+                    <img src="images/puke/11.png" class="seat-empty-left bg-puke-1"/>
+                    <img src="images/puke/11.png" class="seat-empty-left bg-puke-2"/>
+                    <img src="images/puke/11.png" class="seat-empty-left bg-puke-3"/>
+                    <img src="images/puke/11.png" class="seat-empty-left bg-puke-4"/>
+                    <img src="images/puke/11.png" class="seat-empty-left bg-puke-5"/>
+                </div>
             </div>
 
-            <!--modal-->
-            <div class="modal" id="alert-modal" ng-show="showAlertModal">
-                <div class="modal-content">
-                    <div class="modal-title">
-                        
+            <div class="seat" ng-class="{true: 'seat-active', false: 'seat-inactive'}[qiangZhuangStart]">
+                <div class="init-title" ng-hide="qiangZhuangStart">还有座位 快坐下吧</div>
+                <img src="images/assets/seat.png" ng-click="showModal()" ng-hide="qiangZhuangStart"/>
+
+                <img src="images/assets/emoji.png" ng-hide="!qiangZhuangStart"/>
+                <div class="init-title" ng-hide="!qiangZhuangStart">玩家1</div>
+            </div>
+
+            <div class="qiang-zhuang" ng-show="qiangZhuangStart"
+                ng-class="{0: 'qiang-zhuang', 1: 'qiang-zhuang-five', 2: 'kaipai'}[showStep]">
+                <div class="qiang-zhuang-content" ng-show="showQiangZhuangInterval">
+                    <span class="qiang-zhuang-btn-q" ng-click="qiangZhuang()">抢庄</span>
+                    <img src="images/assets/anniu.png" class="qiang-zhuang-content bg-btn"/>
+                    <span class="qiang-zhuang-btn-b" ng-click="buQiangZhuang()">不抢</span>
+                    <img src="images/assets/anniu.png" class="qiang-zhuang-content bg-btn"/>
+                </div>
+                <div class="xia-zhu-content" ng-show="showXiaZhuInterval">
+                    <span class="xia-zhu-btn-1" ng-click="xiaZhu('1')">1倍</span>
+                    <img src="images/assets/anniu.png" class="xia-zhu-content bg-btn"/>
+                    <span class="xia-zhu-btn-2" ng-click="xiaZhu('2')">2倍</span>
+                    <img src="images/assets/anniu.png" class="xia-zhu-content bg-btn"/>
+                    <span class="xia-zhu-btn-3" ng-click="xiaZhu('3')">3倍</span>
+                    <img src="images/assets/anniu.png" class="xia-zhu-content bg-btn"/>
+                </div>
+                <div class="zhao-niu-content" ng-show="showZhaoNiuInterval">
+                    <span>
+                        <div class="zhao-niu-content-num-1">6</div>
+                        <img src="images/assets/boxBG.png"/>
+                    </span>
+                    <span>+</span>
+                    <span>
+                        <div class="zhao-niu-content-num-2">6</div>
+                        <img src="images/assets/boxBG.png"/>
+                    </span>
+                    <span>+</span>
+                    <span>
+                        <div class="zhao-niu-content-num-3">6</div>
+                        <img src="images/assets/boxBG.png"/>
+                    </span>
+                    <span>=</span>
+                    <span>
+                        <div class="zhao-niu-content-num-4">6</div>
+                        <img src="images/assets/boxBG.png"/>
+                    </span>
+                </div>
+
+                <div class="kaipai-content" ng-show="kaiPai">
+                    <div>牛牛</div>
+                    <!--<div>没牛</div>-->
+                </div>
+
+
+                <img src="images/puke/11.png" ng-show="showQiangZhuangInterval || showXiaZhuInterval || showZhaoNiuInterval"/>
+                <img src="images/puke/11.png" ng-show="showQiangZhuangInterval || showXiaZhuInterval || showZhaoNiuInterval"/>
+                <img src="images/puke/11.png" ng-show="showQiangZhuangInterval || showXiaZhuInterval || showZhaoNiuInterval"/>
+                <img src="images/puke/11.png" ng-show="showQiangZhuangInterval || showXiaZhuInterval || showZhaoNiuInterval"/>
+                <img src="images/puke/11.png" ng-show="showZhaoNiuInterval"/>
+
+                <img src="images/puke/11.png" class="kaipai-img-1" ng-show="kaiPai"/>
+                <img src="images/puke/11.png" class="kaipai-img-2" ng-show="kaiPai"/>
+                <img src="images/puke/11.png" class="kaipai-img-3" ng-show="kaiPai"/>
+                <img src="images/puke/11.png" class="kaipai-img-4" ng-show="kaiPai"/>
+                <img src="images/puke/11.png" class="kaipai-img-5" ng-show="kaiPai"/>
+
+                <div class="have-niu" ng-show="showZhaoNiuInterval">
+                    <div>
+                        <span class="you-niu">有牛</span>
+                        <img src="images/assets/anniu.png" />
                     </div>
-                    <div class="modal-body">
-                        下局开始后将扣除40房豆（只有一次），确定要坐下吗？
-                    </div>
-                    <div class="modal-footer">
-                        <span class="cancel" ng-click="hideModal()">取消</span>
-                        <span class="confirm" ng-click="alertModalConfirm()">确定</span>
+                    <div>
+                        <span class="mei-niu">没牛</span>
+                        <img src="images/assets/anniu.png"/>
                     </div>
                 </div>
             </div>
@@ -223,7 +684,47 @@
                 <img src="images/numbers/y1.png" ng-show="startGameNum === 1"/>
                 <img src="images/numbers/y0.png" ng-show="startGameNum === 0"/>
             </div>
+
+            <div class="mic-icon">
+                <img src="images/assets/mic.png"/>
+            </div>
+
+            <div class="emoji-icon" ng-click="emojiIconClick()">
+                <img src="images/assets/emoji.png"/>
+            </div>
+
+            <div class="centerInterval" ng-show="showQiangZhuangInterval === true">
+                <div class="centerIntervalNum">{{showQiangZhuangIntervalNum}}</div>
+                <img src="images/assets/zhongjian.png" />
+            </div>
+
+            <div class="centerInterval" ng-show="showXiaZhuInterval === true">
+                <div class="centerIntervalNum">{{showXiaZhuIntervalNum}}</div>
+                <img src="images/assets/zhongjian.png" />
+            </div>
+
+            <div class="centerInterval" ng-show="showNiuInterval === true">
+                <div class="centerIntervalNum">{{showNiuIntervalNum}}</div>
+                <img src="images/assets/zhongjian.png" />
+            </div>
         </div>
     </div>
 </div>    
+
+
+<!--modal-->
+<div class="modal" id="alert-modal" ng-show="showAlertModal">
+    <div class="modal-content">
+        <div class="modal-title">
+            
+        </div>
+        <div class="modal-body">
+            下局开始后将扣除40房豆（只有一次），确定要坐下吗？
+        </div>
+        <div class="modal-footer">
+            <span class="cancel" ng-click="hideModal()">取消</span>
+            <span class="confirm" ng-click="alertModalConfirm()">确定</span>
+        </div>
+    </div>
+</div>
 
